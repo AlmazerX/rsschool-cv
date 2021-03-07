@@ -19,3 +19,143 @@
                </div>
            </nav>
        </header>
+<main>
+
+        <div class="flex-container">
+            <p><a name="top"></a></p>
+           <div class="first"><div class="photo">
+                <img class="personPhoto" alt="" src='img/H03xEaj8gmk.jpg'>
+             <div class="image"></div></div> </div>
+            <div class="second"><div class="a_second">My main goal is to succeed in the field of programming. My main qualities are perseverance and hard work. I easily remember and assimilate new information, as well as cope with tasks. Unfortunately, I have no work experience, but I really want to get a job in the company.</div>
+        </div></div>
+        <div class ="skills">My Skills
+            <p><a name="top2"></a></p>
+            <div class ="a_skills">
+                • C++<br>
+                • C#<br>
+                • HTML<br>
+                • CSS<br>
+                • JS(some)<br>
+                • Visual Studio<br>
+                • VS Code<br>
+                • Unity<br>
+                • Notepad++<br>
+            </div>
+        </div>
+        <div class ="code">Code(C++)
+            <p><a name="top3"></a></p>
+            <div class ="a_code">
+               <code> template <typename no, typename person> class bank<br>
+                    {<br>
+                        no* number;<br>
+                        person* cc;<br>
+                    public:<br>
+                        bank(no number[], person cc[]);<br>
+                    
+                        void print()
+                        {<br>
+                            cout << "NAME OF THE BANK VISITORS: " << endl;<br>
+                            for (int i = 0; i < n; i++)
+                            {<br>
+                                for (int j = 0; j < n; j++)
+                                {<br>
+                                    cout << " " << cc[i][j];
+                                }
+                            }<br>
+                            cout << endl;
+                        }<br>
+                        void print2()
+                        {<br>
+                            cout << "NAME OF SCORES: " << endl;<br>
+                            for (int i = 0; i < 5; i++)
+                            {<br>
+                                cout << " " << number[i];
+                            }
+                        }<br>
+                    };<br>
+                    template <typename no, typename person> bank<no, person>::bank(no score[], person mas[])
+                    {<br>
+                        int len1 = sizeof(score) + 1;<br>
+                        number = new no[len1];<br>
+                        long len = sizeof(mas) + 1;<br>
+                        cc = new person[len];<br>
+                        delete[] cc;<br>
+                        long len2 = sizeof(mas) + 1;<br>
+                        cc = new person[len2];<br>
+                        for (int i = 0; i < len2; i++)
+                        {<br>
+                            cc[i] = mas[i];
+                        }<br>
+                    
+                        for (int cout = 0; cout < len1; cout++)
+                        {<br>
+                            cc[cout] = mas[cout];
+                        }<br>
+                        for (int got = 0; got < len; got++)
+                        {<br>
+                            number[got] = score[got];
+                        }
+                    }<br>
+                    
+                    int main()
+                    {<br>
+                        string score[5];<br>
+                        int n;<br>
+                        cin >> n;<br>
+                        char mas[n][20];<br>
+                        char temp;<br>
+                        cout << "Enter the users name: " << endl;<br>
+                        for (int i = 0; i < n; i++)
+                        {<br>
+                            for (int j = 0; j < n; j++)
+                            {<br>
+                                cin >> mas[i][j];
+                            }
+                        }<br>
+                        for (int i = 0; i < n; i++)
+                        {<br>
+                            for (int j = 0; j < n - i - 1; j++)
+                            {<br>
+                                if (strcmp(&mas[j], &mas[j + 1]) > 0)<br>
+                                {<br>
+                                    temp = mas[j];<br>
+                                    mas[j] = mas[j + 1];<br>
+                                    mas[j + 1] = temp;
+                                }
+                            }
+                        }<br>
+                        for (int i = 0; i < n; i++) {<br>
+                            cout << mas[i] << endl;
+                        }<br>
+                        cout << "Enter the scores: " << endl;<br>
+                        for (int i = 0; i < 5; i++)<br>
+                        {<br>
+                            cin >> score[i];
+                        }<br>
+                        bank<string, char> page(score, mas);<br>
+                        page.print();<br>
+                        page.print2();<br>
+                    }<br>
+                </code>
+            </div>
+        </div>
+        <div class ="work">Work experience
+            <p><a name="top4"></a></p>
+            <div class ="a_work">
+                I have no work experience. I completed courses in C++ and C# from the Center for Learning Technologies
+            </div>
+        </div>
+        <div class ="education">Education
+            <p><a name="top5"></a></p>
+            <div class ="a_education">
+                At the moment, I have completed two courses at the University of Informatics and Radio Electronics, majoring in medical electronics
+            </div>
+        </div>
+        <div class ="english">My English
+            <p><a name="top6"></a></p>
+            <div class ="a_english">
+                I speak English well. I can express my thoughts freely, and I also have a good command of technical English.
+            </div>
+        </div>
+
+</main>
